@@ -1,0 +1,11 @@
+# robots.txt لموقع Diff Checker Pro
+# يسمح لجميع روبوتات البحث بفهرسة الموقع بالكامل
+
+User-agent: *
+Allow: /
+
+# خريطة الموقع
+Sitemap: https://your-username.github.io/diff-checker-pro/sitemap.xml
+
+# تحديد مدة التخزين المؤقت (اختياري)
+# Crawl-delay: 5
