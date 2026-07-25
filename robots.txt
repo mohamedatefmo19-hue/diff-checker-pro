@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # خريطة الموقع
-Sitemap: https://your-username.github.io/diff-checker-pro/sitemap.xml
+Sitemap: https://mohamedatefmo19-hue.github.io/diff-checker-pro/
 
 # تحديد مدة التخزين المؤقت (اختياري)
 # Crawl-delay: 5
