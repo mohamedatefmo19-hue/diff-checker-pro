@@ -4,35 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ============================================================
-    SEO - تحسين محركات البحث
-    ============================================================ -->
+    <!-- SEO -->
     <title>Diff Checker Pro – أداة مقارنة النصوص والكود | مجانية وسريعة</title>
     <meta name="description" content="Diff Checker Pro: أداة مجانية لمقارنة النصوص والكود والملفات. اكتشف الفروق بين النصوص بسرعة، مع دعم الخط والكلمة والحرف. يعمل بدون إنترنت وبخصوصية تامة.">
     <meta name="keywords" content="diff checker, text compare, مقارنة نصوص, مقارنة كود, diff tool, text diff, code comparison, أداة مقارنة, JSON diff">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://your-username.github.io/diff-checker-pro/">
 
-    <!-- ============================================================
-    Open Graph / Facebook
-    ============================================================ -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Diff Checker Pro – أداة مقارنة النصوص والكود">
     <meta property="og:description" content="قارن بين النصوص والكود واكتشف الفروق بسهولة. مجاني، سريع، يعمل بدون إنترنت.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://your-username.github.io/diff-checker-pro/">
     <meta property="og:image" content="https://your-username.github.io/diff-checker-pro/og-image.png">
 
-    <!-- ============================================================
-    Twitter Cards
-    ============================================================ -->
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Diff Checker Pro – أداة مقارنة النصوص والكود">
     <meta name="twitter:description" content="قارن بين النصوص والكود واكتشف الفروق بسرعة. يعمل بدون إنترنت وبخصوصية تامة.">
     <meta name="twitter:image" content="https://your-username.github.io/diff-checker-pro/twitter-image.png">
 
-    <!-- ============================================================
-    Schema.org (JSON-LD)
-    ============================================================ -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -55,34 +47,23 @@
     </script>
 
     <style>
-        /* ============================================================
-        CSS - التصميم الكامل
-        ============================================================ */
-
         /* ---------- المتغيرات العامة ---------- */
         :root {
-            /* الألوان الأساسية */
             --bg-primary: #0a0e1a;
             --bg-secondary: #111827;
             --bg-card: rgba(255, 255, 255, 0.05);
             --bg-card-hover: rgba(255, 255, 255, 0.08);
             --glass-border: rgba(255, 255, 255, 0.1);
             --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-
-            /* الألوان النصية */
             --text-primary: #f1f5f9;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
-
-            /* ألوان الفروق */
             --diff-added: rgba(34, 197, 94, 0.25);
             --diff-added-border: #22c55e;
             --diff-removed: rgba(239, 68, 68, 0.25);
             --diff-removed-border: #ef4444;
             --diff-changed: rgba(234, 179, 8, 0.25);
             --diff-changed-border: #eab308;
-
-            /* ألوان واجهة */
             --accent-primary: #6366f1;
             --accent-secondary: #8b5cf6;
             --accent-glow: rgba(99, 102, 241, 0.3);
@@ -90,15 +71,12 @@
             --btn-primary-hover: #818cf8;
             --btn-danger: #ef4444;
             --btn-danger-hover: #f87171;
-
-            /* أبعاد */
             --radius: 16px;
             --radius-sm: 10px;
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
-        /* الوضع الفاتح */
         [data-theme="light"] {
             --bg-primary: #f8fafc;
             --bg-secondary: #ffffff;
@@ -112,7 +90,6 @@
             --accent-glow: rgba(99, 102, 241, 0.15);
         }
 
-        /* ---------- إعادة تعيين واستيراد ---------- */
         * {
             margin: 0;
             padding: 0;
@@ -128,7 +105,6 @@
             overflow-x: hidden;
         }
 
-        /* ---------- سكرول جميل ---------- */
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -144,16 +120,13 @@
             background: var(--accent-secondary);
         }
 
-        /* ---------- حاوية رئيسية ---------- */
         .app-container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 20px 24px 40px;
         }
 
-        /* ============================================================
-        رأس الصفحة - Header
-        ============================================================ */
+        /* Header */
         .header {
             display: flex;
             justify-content: space-between;
@@ -213,7 +186,6 @@
             flex-wrap: wrap;
         }
 
-        /* ---------- زر الوضع المظلم ---------- */
         .theme-toggle {
             width: 44px;
             height: 44px;
@@ -235,7 +207,6 @@
             transform: scale(1.05);
         }
 
-        /* ---------- أزرار الإجراءات السريعة ---------- */
         .action-btn {
             padding: 8px 18px;
             border-radius: var(--radius-sm);
@@ -275,9 +246,7 @@
             background: rgba(239, 68, 68, 0.15);
         }
 
-        /* ============================================================
-        منطقة الإعلانات - AdSense
-        ============================================================ */
+        /* Ad container */
         .ad-container {
             background: var(--bg-card);
             border: 1px solid var(--glass-border);
@@ -301,9 +270,7 @@
             opacity: 0.6;
         }
 
-        /* ============================================================
-        محتوى رئيسي - المقارنة
-        ============================================================ */
+        /* Main grid */
         .main-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -311,7 +278,6 @@
             margin-bottom: 24px;
         }
 
-        /* ---------- بطاقات النصوص ---------- */
         .text-card {
             background: var(--bg-card);
             backdrop-filter: blur(20px);
@@ -381,7 +347,6 @@
             color: var(--text-primary);
         }
 
-        /* ---------- مناطق النص ---------- */
         .text-area-wrapper {
             position: relative;
             flex: 1;
@@ -426,9 +391,7 @@
             pointer-events: none;
         }
 
-        /* ============================================================
-        شريط التحكم
-        ============================================================ */
+        /* Controls bar */
         .controls-bar {
             display: flex;
             flex-wrap: wrap;
@@ -487,9 +450,7 @@
             background: var(--glass-border);
         }
 
-        /* ============================================================
-        منطقة النتائج
-        ============================================================ */
+        /* Results */
         .results-container {
             background: var(--bg-card);
             backdrop-filter: blur(20px);
@@ -549,7 +510,6 @@
             color: var(--accent-primary);
         }
 
-        /* ---------- عرض النتائج ---------- */
         .diff-output {
             font-family: 'JetBrains Mono', 'Fira Code', monospace;
             font-size: 14px;
@@ -622,17 +582,11 @@
             font-size: 15px;
         }
 
-        /* ============================================================
-        منطقة الإعلانات السفلية
-        ============================================================ */
         .ad-bottom {
             margin-top: 24px;
             min-height: 60px;
         }
 
-        /* ============================================================
-        تذييل الصفحة
-        ============================================================ */
         .footer {
             margin-top: 40px;
             padding: 20px 0;
@@ -656,9 +610,7 @@
             flex-wrap: wrap;
         }
 
-        /* ============================================================
-        Toast Notifications - إشعارات
-        ============================================================ */
+        /* Toast */
         .toast-container {
             position: fixed;
             top: 24px;
@@ -735,9 +687,7 @@
             }
         }
 
-        /* ============================================================
-        تحميل - Loading Animation
-        ============================================================ */
+        /* Loading */
         .loading-overlay {
             position: fixed;
             top: 0;
@@ -779,11 +729,7 @@
             font-weight: 500;
         }
 
-        /* ============================================================
-        استجابة - Responsive
-        ============================================================ */
-
-        /* شاشات متوسطة */
+        /* Responsive */
         @media (max-width: 1024px) {
             .main-grid {
                 grid-template-columns: 1fr;
@@ -794,7 +740,6 @@
             }
         }
 
-        /* شاشات صغيرة */
         @media (max-width: 640px) {
             .app-container {
                 padding: 12px 14px 30px;
@@ -879,7 +824,6 @@
             }
         }
 
-        /* شاشات صغيرة جداً */
         @media (max-width: 400px) {
             .header-actions {
                 flex-wrap: wrap;
@@ -896,7 +840,6 @@
             }
         }
 
-        /* دعم الوضع المظلم في المتصفح */
         @media (prefers-color-scheme: dark) {
             :root:not([data-theme="light"]) {
                 --bg-primary: #0a0e1a;
@@ -909,58 +852,39 @@
 </head>
 <body>
 
-    <!-- ============================================================
-    شاشة التحميل
-    ============================================================ -->
+    <!-- Loading -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner"></div>
         <div class="loading-text">جاري تحميل Diff Checker Pro...</div>
     </div>
 
-    <!-- ============================================================
-    حاوية الإشعارات
-    ============================================================ -->
+    <!-- Toast container -->
     <div class="toast-container" id="toastContainer"></div>
 
-    <!-- ============================================================
-    التطبيق الرئيسي
-    ============================================================ -->
+    <!-- Main app -->
     <div class="app-container">
 
-        <!-- ===== الرأس ===== -->
         <header class="header">
             <a href="#" class="logo">
                 <div class="logo-icon">⟷</div>
                 <div class="logo-text">Diff <span>Checker</span></div>
             </a>
             <div class="header-actions">
-                <button class="action-btn" onclick="swapTexts()" title="تبديل النصوص">
-                    ⇄ تبديل
-                </button>
-                <button class="action-btn" onclick="clearAll()" title="مسح الكل">
-                    ✕ مسح
-                </button>
-                <button class="action-btn primary" onclick="compareTexts()" title="مقارنة">
-                    ⚡ قارن
-                </button>
-                <button class="theme-toggle" id="themeToggle" title="تبديل الوضع">
-                    🌙
-                </button>
+                <button class="action-btn" id="swapBtn">⇄ تبديل</button>
+                <button class="action-btn" id="clearBtn">✕ مسح</button>
+                <button class="action-btn primary" id="compareBtn">⚡ قارن</button>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
             </div>
         </header>
 
-        <!-- ===== إعلانات أعلى ===== -->
+        <!-- Ad top -->
         <div class="ad-container" id="adTop">
             <span class="ad-label">✦ إعلان</span>
-            <!-- هنا يمكن وضع كود Google AdSense -->
-            <div style="font-size:13px;color:var(--text-muted);">
-                [مساحة إعلانية - Google AdSense]
-            </div>
+            <div style="font-size:13px;color:var(--text-muted);">[مساحة إعلانية - Google AdSense]</div>
         </div>
 
-        <!-- ===== شبكة النصوص ===== -->
+        <!-- Text areas -->
         <div class="main-grid">
-            <!-- النص الأصلي -->
             <div class="text-card">
                 <div class="text-card-header">
                     <div class="text-card-title">
@@ -968,8 +892,8 @@
                         <span class="badge original">المرجع</span>
                     </div>
                     <div class="text-card-actions">
-                        <button onclick="loadSample('original')" title="تحميل مثال">📋 مثال</button>
-                        <button onclick="clearText('original')" title="مسح">✕</button>
+                        <button id="sampleOriginalBtn">📋 مثال</button>
+                        <button id="clearOriginalBtn">✕</button>
                     </div>
                 </div>
                 <div class="text-area-wrapper">
@@ -978,7 +902,6 @@
                 </div>
             </div>
 
-            <!-- النص المعدل -->
             <div class="text-card">
                 <div class="text-card-header">
                     <div class="text-card-title">
@@ -986,8 +909,8 @@
                         <span class="badge modified">مقارن</span>
                     </div>
                     <div class="text-card-actions">
-                        <button onclick="loadSample('modified')" title="تحميل مثال">📋 مثال</button>
-                        <button onclick="clearText('modified')" title="مسح">✕</button>
+                        <button id="sampleModifiedBtn">📋 مثال</button>
+                        <button id="clearModifiedBtn">✕</button>
                     </div>
                 </div>
                 <div class="text-area-wrapper">
@@ -997,7 +920,7 @@
             </div>
         </div>
 
-        <!-- ===== شريط التحكم ===== -->
+        <!-- Controls -->
         <div class="controls-bar">
             <div class="controls-group">
                 <label for="diffMode">نمط المقارنة:</label>
@@ -1034,12 +957,10 @@
 
             <div class="controls-divider"></div>
 
-            <button class="action-btn primary" onclick="compareTexts()" style="margin-right:auto;">
-                ⚡ قارن الآن
-            </button>
+            <button class="action-btn primary" id="compareBtn2" style="margin-right:auto;">⚡ قارن الآن</button>
         </div>
 
-        <!-- ===== النتائج ===== -->
+        <!-- Results -->
         <div class="results-container" id="resultsContainer">
             <div class="results-header">
                 <div class="results-title">
@@ -1058,15 +979,12 @@
             </div>
         </div>
 
-        <!-- ===== إعلانات أسفل ===== -->
+        <!-- Ad bottom -->
         <div class="ad-container ad-bottom" id="adBottom">
             <span class="ad-label">✦ إعلان</span>
-            <div style="font-size:13px;color:var(--text-muted);">
-                [مساحة إعلانية - Google AdSense / Banner / Native Ads]
-            </div>
+            <div style="font-size:13px;color:var(--text-muted);">[مساحة إعلانية - Google AdSense / Banner / Native Ads]</div>
         </div>
 
-        <!-- ===== التذييل ===== -->
         <footer class="footer">
             <div>© 2026 Diff Checker Pro – أداة مجانية لمقارنة النصوص والكود</div>
             <div class="footer-links">
@@ -1080,23 +998,17 @@
 
     </div>
 
-    <!-- ============================================================
-    JavaScript - البرمجة الكاملة
-    ============================================================ -->
     <script>
         /**
          * ============================================================
-         * Diff Checker Pro - JavaScript كامل
+         * Diff Checker Pro - JavaScript كامل مع حلول للمشاكل
          * ============================================================
          */
 
         (function() {
             'use strict';
 
-            // ============================================================
-            // 1. المتغيرات والإشارات إلى عناصر DOM
-            // ============================================================
-
+            // ---------- العناصر ----------
             const textOriginal = document.getElementById('textOriginal');
             const textModified = document.getElementById('textModified');
             const diffOutput = document.getElementById('diffOutput');
@@ -1115,112 +1027,17 @@
             const loadingOverlay = document.getElementById('loadingOverlay');
             const toastContainer = document.getElementById('toastContainer');
 
-            // ============================================================
-            // 2. إدارة الوضع (Dark / Light)
-            // ============================================================
+            // ---------- الأزرار ----------
+            const compareBtn = document.getElementById('compareBtn');
+            const compareBtn2 = document.getElementById('compareBtn2');
+            const swapBtn = document.getElementById('swapBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const sampleOriginalBtn = document.getElementById('sampleOriginalBtn');
+            const sampleModifiedBtn = document.getElementById('sampleModifiedBtn');
+            const clearOriginalBtn = document.getElementById('clearOriginalBtn');
+            const clearModifiedBtn = document.getElementById('clearModifiedBtn');
 
-            function getTheme() {
-                return document.documentElement.getAttribute('data-theme') || 'dark';
-            }
-
-            function setTheme(theme) {
-                document.documentElement.setAttribute('data-theme', theme);
-                localStorage.setItem('diff-checker-theme', theme);
-                themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
-            }
-
-            function toggleTheme() {
-                const current = getTheme();
-                setTheme(current === 'dark' ? 'light' : 'dark');
-            }
-
-            // استعادة الوضع المخزن
-            const savedTheme = localStorage.getItem('diff-checker-theme');
-            if (savedTheme) {
-                setTheme(savedTheme);
-            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                setTheme('light');
-            } else {
-                setTheme('dark');
-            }
-
-            themeToggle.addEventListener('click', toggleTheme);
-
-            // ============================================================
-            // 3. إدارة الإشعارات (Toast)
-            // ============================================================
-
-            function showToast(message, type = 'info', duration = 3500) {
-                const icons = {
-                    success: '✅',
-                    error: '❌',
-                    info: 'ℹ️'
-                };
-                const toast = document.createElement('div');
-                toast.className = `toast ${type}`;
-                toast.innerHTML = `
-                            <span class="toast-icon">${icons[type] || 'ℹ️'}</span>
-                            <span>${message}</span>
-                            <button class="toast-close" aria-label="إغلاق">✕</button>
-                        `;
-                toastContainer.appendChild(toast);
-
-                // زر الإغلاق
-                const closeBtn = toast.querySelector('.toast-close');
-                closeBtn.addEventListener('click', () => {
-                    removeToast(toast);
-                });
-
-                // إغلاق تلقائي
-                const timeout = setTimeout(() => {
-                    removeToast(toast);
-                }, duration);
-
-                // إيقاف المؤقت عند التمرير
-                toast.addEventListener('mouseenter', () => clearTimeout(timeout));
-                toast.addEventListener('mouseleave', () => {
-                    setTimeout(() => removeToast(toast), 1500);
-                });
-            }
-
-            function removeToast(toast) {
-                if (!toast.parentNode) return;
-                toast.style.animation = 'slideOutRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards';
-                setTimeout(() => {
-                    if (toast.parentNode) toast.remove();
-                }, 350);
-            }
-
-            // ============================================================
-            // 4. عدّ الأحرف
-            // ============================================================
-
-            function updateCharCounts() {
-                countOriginal.textContent = textOriginal.value.length + ' حرف';
-                countModified.textContent = textModified.value.length + ' حرف';
-            }
-
-            textOriginal.addEventListener('input', updateCharCounts);
-            textModified.addEventListener('input', updateCharCounts);
-
-            // المقارنة التلقائية عند الكتابة (بعد توقف)
-            let autoCompareTimer = null;
-            [textOriginal, textModified].forEach(el => {
-                el.addEventListener('input', () => {
-                    updateCharCounts();
-                    clearTimeout(autoCompareTimer);
-                    autoCompareTimer = setTimeout(() => {
-                        if (textOriginal.value.trim() && textModified.value.trim()) {
-                            compareTexts();
-                        }
-                    }, 600);
-                });
-            });
-
-            // ============================================================
-            // 5. تحميل النماذج (Samples)
-            // ============================================================
-
+            // ---------- النماذج ----------
             const SAMPLE_ORIGINAL = `مرحباً بك في Diff Checker Pro
 
         هذه أداة متطورة لمقارنة النصوص والكود.
@@ -1258,44 +1075,10 @@
         • يعمل بدون اتصال بالإنترنت
         • يحترم خصوصية بياناتك`;
 
-            function loadSample(target) {
-                if (target === 'original') {
-                    textOriginal.value = SAMPLE_ORIGINAL;
-                } else {
-                    textModified.value = SAMPLE_MODIFIED;
-                }
-                updateCharCounts();
-                // المقارنة التلقائية
-                if (textOriginal.value.trim() && textModified.value.trim()) {
-                    setTimeout(compareTexts, 100);
-                }
-                showToast('تم تحميل النموذج', 'success');
-            }
-
-            // ============================================================
-            // 6. مسح النصوص
-            // ============================================================
-
-            function clearText(target) {
-                if (target === 'original') {
-                    textOriginal.value = '';
-                } else {
-                    textModified.value = '';
-                }
-                updateCharCounts();
-                if (!textOriginal.value.trim() || !textModified.value.trim()) {
-                    diffOutput.innerHTML = `<div class="diff-empty">✨ الصق نصين في الأعلى واضغط "قارن"</div>`;
-                    resetStats();
-                }
-            }
-
-            function clearAll() {
-                textOriginal.value = '';
-                textModified.value = '';
-                updateCharCounts();
-                diffOutput.innerHTML = `<div class="diff-empty">✨ الصق نصين في الأعلى واضغط "قارن"</div>`;
-                resetStats();
-                showToast('تم مسح الكل', 'info');
+            // ---------- دوال مساعدة ----------
+            function updateCharCounts() {
+                countOriginal.textContent = textOriginal.value.length + ' حرف';
+                countModified.textContent = textModified.value.length + ' حرف';
             }
 
             function resetStats() {
@@ -1306,39 +1089,63 @@
                 resultTimestamp.textContent = '';
             }
 
-            // ============================================================
-            // 7. تبديل النصوص
-            // ============================================================
-
-            function swapTexts() {
-                const temp = textOriginal.value;
-                textOriginal.value = textModified.value;
-                textModified.value = temp;
-                updateCharCounts();
-                if (textOriginal.value.trim() && textModified.value.trim()) {
-                    setTimeout(compareTexts, 100);
-                }
-                showToast('تم تبديل النصوص', 'info');
+            function escapeHtml(text) {
+                if (text === null || text === undefined) return '';
+                const div = document.createElement('div');
+                div.textContent = String(text);
+                return div.innerHTML;
             }
 
-            // ============================================================
-            // 8. خوارزمية المقارنة الأساسية (Diff)
-            // ============================================================
+            // ---------- إدارة الإشعارات ----------
+            function showToast(message, type = 'info', duration = 3500) {
+                const icons = {
+                    success: '✅',
+                    error: '❌',
+                    info: 'ℹ️'
+                };
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                toast.innerHTML = `
+                            <span class="toast-icon">${icons[type] || 'ℹ️'}</span>
+                            <span>${message}</span>
+                            <button class="toast-close" aria-label="إغلاق">✕</button>
+                        `;
+                toastContainer.appendChild(toast);
 
-            /**
-             * تنفيذ خوارزمية Longest Common Subsequence (LCS)
-             * لإيجاد الفروق بين نصين
-             */
-            function computeDiff(original, modified, mode, ignoreWS, ignoreCase) {
-                // تحضير النصوص
-                let a = original.split('\n');
-                let b = modified.split('\n');
+                const closeBtn = toast.querySelector('.toast-close');
+                closeBtn.addEventListener('click', () => {
+                    removeToast(toast);
+                });
 
-                // معالجة حسب النمط
-                if (mode === 'word') {
-                    a = a.flatMap(line => line.split(/\s+/).filter(w => w.length > 0));
-                    b = b.flatMap(line => line.split(/\s+/).filter(w => w.length > 0));
-                } else if (mode === 'char') {
+                const timeout = setTimeout(() => {
+                    removeToast(toast);
+                }, duration);
+
+                toast.addEventListener('mouseenter', () => clearTimeout(timeout));
+                toast.addEventListener('mouseleave', () => {
+                    setTimeout(() => removeToast(toast), 1500);
+                });
+            }
+
+            function removeToast(toast) {
+                if (!toast.parentNode) return;
+                toast.style.animation = 'slideOutRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+                setTimeout(() => {
+                    if (toast.parentNode) toast.remove();
+                }, 350);
+            }
+
+            // ---------- خوارزمية المقارنة ----------
+            function computeDiff(original, modified, mode, ignoreWS, ignoreCaseFlag) {
+                let a, b;
+
+                if (mode === 'line') {
+                    a = original.split('\n');
+                    b = modified.split('\n');
+                } else if (mode === 'word') {
+                    a = original.split(/\s+/).filter(w => w.length > 0);
+                    b = modified.split(/\s+/).filter(w => w.length > 0);
+                } else { // char
                     a = original.split('');
                     b = modified.split('');
                 }
@@ -1349,17 +1156,15 @@
                     b = b.map(s => s.replace(/\s/g, ''));
                 }
 
-                // تجاهل حالة الحروف
-                if (ignoreCase) {
+                if (ignoreCaseFlag) {
                     a = a.map(s => typeof s === 'string' ? s.toLowerCase() : s);
                     b = b.map(s => typeof s === 'string' ? s.toLowerCase() : s);
                 }
 
-                // حفظ النسخ الأصلية للعرض
-                const originalItems = a;
-                const modifiedItems = b;
+                const originalItems = a.slice();
+                const modifiedItems = b.slice();
 
-                // خوارزمية LCS
+                // LCS
                 const m = a.length;
                 const n = b.length;
                 const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
@@ -1374,7 +1179,6 @@
                     }
                 }
 
-                // استخراج الفروق
                 const diff = [];
                 let i = m,
                     j = n;
@@ -1390,7 +1194,6 @@
                         diff.push({ type: 'removed', original: a[i - 1], modified: null });
                         i--;
                     } else {
-                        // حالة استثنائية
                         if (i > 0) {
                             diff.push({ type: 'removed', original: a[i - 1], modified: null });
                             i--;
@@ -1400,10 +1203,8 @@
                         }
                     }
                 }
-
                 diff.reverse();
 
-                // إحصاءات
                 let added = 0,
                     removed = 0,
                     changed = 0,
@@ -1415,7 +1216,6 @@
                     else unchanged++;
                 }
 
-                // حساب التشابه
                 const total = added + removed + unchanged;
                 const similarity = total > 0 ? Math.round((unchanged / total) * 100) : 0;
 
@@ -1425,24 +1225,18 @@
                 };
             }
 
-            // ============================================================
-            // 9. عرض النتائج
-            // ============================================================
-
-            function renderDiff(result, viewMode) {
+            // ---------- عرض النتائج ----------
+            function renderDiff(result, view) {
                 if (!result || !result.diff || result.diff.length === 0) {
                     return `<div class="diff-empty">✨ لا توجد فروق - النصوص متطابقة</div>`;
                 }
 
-                const isSide = viewMode === 'side';
+                const isSide = view === 'side';
                 let html = '';
 
                 if (isSide) {
-                    // عرض جنباً إلى جنب
-                    let maxLines = 0;
                     let lines = [];
                     let lineNum = 1;
-
                     for (const item of result.diff) {
                         if (item.type === 'unchanged') {
                             lines.push({
@@ -1488,7 +1282,6 @@
                                 `;
                     }
                 } else {
-                    // عرض موحد
                     let lineNum = 1;
                     for (const item of result.diff) {
                         const typeClass = item.type;
@@ -1508,21 +1301,10 @@
                                 `;
                     }
                 }
-
                 return html;
             }
 
-            function escapeHtml(text) {
-                if (text === null || text === undefined) return '';
-                const div = document.createElement('div');
-                div.textContent = String(text);
-                return div.innerHTML;
-            }
-
-            // ============================================================
-            // 10. وظيفة المقارنة الرئيسية
-            // ============================================================
-
+            // ---------- وظيفة المقارنة الرئيسية ----------
             function compareTexts() {
                 const original = textOriginal.value;
                 const modified = textModified.value;
@@ -1536,26 +1318,22 @@
 
                 const mode = diffMode.value;
                 const ignoreWS = ignoreWhitespace.checked;
-                const ignoreCase = ignoreCase.checked;
+                const ignoreCaseFlag = ignoreCase.checked;
                 const view = viewMode.value;
 
                 try {
-                    const result = computeDiff(original, modified, mode, ignoreWS, ignoreCase);
+                    const result = computeDiff(original, modified, mode, ignoreWS, ignoreCaseFlag);
 
-                    // عرض النتائج
                     diffOutput.innerHTML = renderDiff(result, view);
 
-                    // تحديث الإحصائيات
                     addedCount.textContent = result.stats.added;
                     removedCount.textContent = result.stats.removed;
                     changedCount.textContent = result.stats.changed;
                     similarityPercent.textContent = result.stats.similarity;
 
-                    // وقت المقارنة
                     const now = new Date();
                     resultTimestamp.textContent = `آخر تحديث: ${now.toLocaleTimeString('ar-SA')}`;
 
-                    // إشعار بالنتيجة
                     if (result.stats.similarity === 100) {
                         showToast('✅ النصوص متطابقة تماماً!', 'success');
                     } else if (result.stats.similarity > 80) {
@@ -1566,38 +1344,121 @@
 
                 } catch (error) {
                     console.error('خطأ في المقارنة:', error);
-                    diffOutput.innerHTML = `<div class="diff-empty" style="color:var(--diff-removed-border);">❌ حدث خطأ أثناء المقارنة: ${escapeHtml(error.message)}</div>`;
+                    diffOutput.innerHTML =
+                        `<div class="diff-empty" style="color:var(--diff-removed-border);">❌ حدث خطأ أثناء المقارنة: ${escapeHtml(error.message)}</div>`;
                     showToast('حدث خطأ أثناء المقارنة', 'error');
                 }
             }
 
-            // ============================================================
-            // 11. اختصارات لوحة المفاتيح
-            // ============================================================
+            // ---------- دوال أخرى ----------
+            function swapTexts() {
+                const temp = textOriginal.value;
+                textOriginal.value = textModified.value;
+                textModified.value = temp;
+                updateCharCounts();
+                if (textOriginal.value.trim() && textModified.value.trim()) {
+                    setTimeout(compareTexts, 100);
+                }
+                showToast('تم تبديل النصوص', 'info');
+            }
 
-            document.addEventListener('keydown', (e) => {
-                // Ctrl+Enter للمقارنة
-                if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-                    e.preventDefault();
-                    compareTexts();
+            function clearAll() {
+                textOriginal.value = '';
+                textModified.value = '';
+                updateCharCounts();
+                diffOutput.innerHTML = `<div class="diff-empty">✨ الصق نصين في الأعلى واضغط "قارن"</div>`;
+                resetStats();
+                showToast('تم مسح الكل', 'info');
+            }
+
+            function clearText(target) {
+                if (target === 'original') {
+                    textOriginal.value = '';
+                } else {
+                    textModified.value = '';
                 }
-                // Ctrl+K لمسح الكل
-                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-                    e.preventDefault();
-                    clearAll();
+                updateCharCounts();
+                if (!textOriginal.value.trim() || !textModified.value.trim()) {
+                    diffOutput.innerHTML = `<div class="diff-empty">✨ الصق نصين في الأعلى واضغط "قارن"</div>`;
+                    resetStats();
                 }
-                // Ctrl+Shift+S لتبديل النصوص
-                if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'S') {
-                    e.preventDefault();
-                    swapTexts();
+            }
+
+            function loadSample(target) {
+                if (target === 'original') {
+                    textOriginal.value = SAMPLE_ORIGINAL;
+                } else {
+                    textModified.value = SAMPLE_MODIFIED;
                 }
+                updateCharCounts();
+                if (textOriginal.value.trim() && textModified.value.trim()) {
+                    setTimeout(compareTexts, 100);
+                }
+                showToast('تم تحميل النموذج', 'success');
+            }
+
+            // ---------- الوضع المظلم ----------
+            function getTheme() {
+                return document.documentElement.getAttribute('data-theme') || 'dark';
+            }
+
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('diff-checker-theme', theme);
+                themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+            }
+
+            function toggleTheme() {
+                const current = getTheme();
+                setTheme(current === 'dark' ? 'light' : 'dark');
+            }
+
+            // استعادة الوضع
+            const savedTheme = localStorage.getItem('diff-checker-theme');
+            if (savedTheme) {
+                setTheme(savedTheme);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+
+            // ---------- ربط الأحداث ----------
+            // أزرار المقارنة
+            compareBtn.addEventListener('click', compareTexts);
+            compareBtn2.addEventListener('click', compareTexts);
+
+            // أزرار أخرى
+            swapBtn.addEventListener('click', swapTexts);
+            clearBtn.addEventListener('click', clearAll);
+            sampleOriginalBtn.addEventListener('click', () => loadSample('original'));
+            sampleModifiedBtn.addEventListener('click', () => loadSample('modified'));
+            clearOriginalBtn.addEventListener('click', () => clearText('original'));
+            clearModifiedBtn.addEventListener('click', () => clearText('modified'));
+
+            // تبديل الوضع
+            themeToggle.addEventListener('click', toggleTheme);
+
+            // عدّ الأحرف
+            textOriginal.addEventListener('input', updateCharCounts);
+            textModified.addEventListener('input', updateCharCounts);
+
+            // مقارنة تلقائية عند الكتابة (مع تأخير)
+            let autoCompareTimer = null;
+            [textOriginal, textModified].forEach(el => {
+                el.addEventListener('input', () => {
+                    updateCharCounts();
+                    clearTimeout(autoCompareTimer);
+                    autoCompareTimer = setTimeout(() => {
+                        if (textOriginal.value.trim() && textModified.value.trim()) {
+                            compareTexts();
+                        }
+                    }, 600);
+                });
             });
 
-            // ============================================================
-            // 12. دعم السحب والإفلات (Drag & Drop)
-            // ============================================================
-
-            function setupDragAndDrop(textarea, target) {
+            // سحب وإفلات
+            function setupDragAndDrop(textarea) {
                 textarea.addEventListener('dragover', (e) => {
                     e.preventDefault();
                     textarea.style.borderColor = 'var(--accent-primary)';
@@ -1634,21 +1495,16 @@
                 });
             }
 
-            setupDragAndDrop(textOriginal, 'original');
-            setupDragAndDrop(textModified, 'modified');
+            setupDragAndDrop(textOriginal);
+            setupDragAndDrop(textModified);
 
-            // ============================================================
-            // 13. تحميل أولي - مقارنة تلقائية مع النماذج
-            // ============================================================
-
-            // تحميل نماذج افتراضية عند أول فتح
+            // ---------- تحميل أولي ----------
             setTimeout(() => {
                 textOriginal.value = SAMPLE_ORIGINAL;
                 textModified.value = SAMPLE_MODIFIED;
                 updateCharCounts();
                 setTimeout(compareTexts, 300);
 
-                // إخفاء شاشة التحميل
                 setTimeout(() => {
                     loadingOverlay.classList.add('hidden');
                 }, 500);
@@ -1656,15 +1512,21 @@
                 showToast('🚀 مرحباً بك في Diff Checker Pro!', 'success', 3000);
             }, 400);
 
-            // ============================================================
-            // 14. تصدير الوظائف للاستخدام من HTML
-            // ============================================================
-
-            window.compareTexts = compareTexts;
-            window.clearAll = clearAll;
-            window.clearText = clearText;
-            window.swapTexts = swapTexts;
-            window.loadSample = loadSample;
+            // اختصارات لوحة المفاتيح
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                    e.preventDefault();
+                    compareTexts();
+                }
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    clearAll();
+                }
+                if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'S') {
+                    e.preventDefault();
+                    swapTexts();
+                }
+            });
 
             console.log('✅ Diff Checker Pro جاهز للاستخدام');
 
